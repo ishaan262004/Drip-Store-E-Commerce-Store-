@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="client/public/drip-logo.png" alt="DRIP Store" width="80" />
-</p>
 
 <h1 align="center">DRIP Store</h1>
 
