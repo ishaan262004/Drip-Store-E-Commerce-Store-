@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 import { toast } from 'react-toastify';
+import axios from 'axios';
+
+const API_BASE = import.meta.env.VITE_API_URL || '';
 
 const cardStyle = {
     style: {
@@ -28,14 +31,11 @@ export default function PaymentForm({ total, onSuccess, disabled }) {
         setError(null);
 
         try {
-            // 1. Create PaymentIntent on backend (via Vite proxy)
-            const res = await fetch('/api/payments/create-payment-intent', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ amount: Math.round(total * 100) }), // dollars to cents
+            // 1. Create PaymentIntent on backend
+            const { data } = await axios.post(`${API_BASE}/api/payments/create-payment-intent`, {
+                amount: Math.round(total * 100), // dollars to cents
             });
 
-            const data = await res.json();
             if (data.error) throw new Error(data.error);
 
             // 2. Confirm card payment
