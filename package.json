@@ -1,0 +1,15 @@
+{
+    "name": "drip-store",
+    "version": "1.0.0",
+    "private": true,
+    "description": "DRIP Store — GenZ E-Commerce (Monorepo)",
+    "scripts": {
+        "server": "cd server && npm run dev",
+        "client": "cd client && npm run dev",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "install:all": "cd server && npm install && cd ../client && npm install"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}

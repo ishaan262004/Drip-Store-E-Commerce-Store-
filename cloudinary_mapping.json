@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "/hero-slide-1.png": "https://res.cloudinary.com/dzewuyhhx/image/upload/v1771753568/drip-store/hero/hero-slide-1.jpg",
+    "/hero-slide-2.png": "https://res.cloudinary.com/dzewuyhhx/image/upload/v1771753569/drip-store/hero/hero-slide-2.jpg",
+    "/hero-slide-3.png": "https://res.cloudinary.com/dzewuyhhx/image/upload/v1771753570/drip-store/hero/hero-slide-3.jpg",
+    "/hero-slide-4.png": "https://res.cloudinary.com/dzewuyhhx/image/upload/v1771753570/drip-store/hero/hero-slide-4.jpg",
+    "/hero-slide-5.png": "https://res.cloudinary.com/dzewuyhhx/image/upload/v1771753571/drip-store/hero/hero-slide-5.jpg"
+  },
+  "categories": {
+    "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=400&h=500&fit=crop&sat=-100": "https://res.cloudinary.com/dzewuyhhx/image/upload/e_grayscale/v1771753572/drip-store/categories/men.jpg",
+    "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&h=500&fit=crop&sat=-100": "https://res.cloudinary.com/dzewuyhhx/image/upload/e_grayscale/v1771753573/drip-store/categories/women.jpg",
+    "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400&h=500&fit=crop&sat=-100": "https://res.cloudinary.com/dzewuyhhx/image/upload/e_grayscale/v1771753574/drip-store/categories/accessories.jpg",
+    "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=400&h=500&fit=crop&sat=-100": "https://res.cloudinary.com/dzewuyhhx/image/upload/e_grayscale/v1771753575/drip-store/categories/new-arrivals.jpg"
+  },
+  "misc": {
+    "placeholder": "https://res.cloudinary.com/dzewuyhhx/image/upload/e_grayscale/v1771753576/drip-store/misc/luxury-placeholder.jpg",
+    "logo": "https://res.cloudinary.com/dzewuyhhx/image/upload/v1771753577/drip-store/misc/drip-logo.jpg"
+  }
+}
