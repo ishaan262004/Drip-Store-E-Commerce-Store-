@@ -29,22 +29,22 @@
 
 ## ✨ Features
 
-### 🛍️ Storefront
-- **500+ Products** — Curated catalog across Men, Women & Accessories categories
+### Storefront
+- **500+ Demo Products** — Curated catalog across Men, Women & Accessories categories
 - **Product Filtering** — Filter by category, search by name, sort by price/rating
 - **Shopping Cart** — Redux-powered persistent cart with size & color selection
 - **Secure Checkout** — Stripe Elements integration with real payment processing
 - **Order Confirmation** — Email receipts via Nodemailer + thank-you page with payment ID
 - **User Profiles** — Clerk-managed authentication with protected routes
 
-### 🔐 Admin Dashboard (`/admin`)
+###  Admin Dashboard (`/admin`)
 - **Orders Management** — View all orders, update status (Processing → Shipped → Delivered)
 - **User Management** — See all registered users synced from Clerk, with order counts & spend
 - **Analytics** — Total revenue, order count, top-selling products, monthly revenue charts
 - **Product Catalog** — Browse all 500 products with stock levels and pricing
 - **Role-Based Access** — Only `isAdmin: true` users see the Admin button in the navbar
 
-### 🏗️ Technical Highlights
+###  Technical Highlights
 - **Zero hardcoded secrets** — All keys in environment variables
 - **Clerk ↔ MongoDB user sync** — `attachUser` middleware auto-creates MongoDB records for Clerk users
 - **Stock management** — Inventory decremented server-side after each order
@@ -52,7 +52,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 
@@ -172,7 +172,7 @@ drip-store/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -254,7 +254,7 @@ This project deploys as **two separate Vercel projects** from the same repo:
 
 ---
 
-## 🔒 Authentication Flow
+##  Authentication Flow
 
 ```
 User clicks Sign In
@@ -276,7 +276,7 @@ req.user populated → controllers have full user context
 
 ---
 
-## 💳 Payment Flow
+##  Payment Flow
 
 ```
 Checkout page → Shipping form filled
@@ -310,16 +310,15 @@ Frontend: Redirected to /thank-you with payment ID
 | `GET` | `/api/orders/:userId` | ✅ | Get user's orders |
 | `POST` | `/api/payments/create-payment-intent` | — | Create Stripe payment |
 | `POST` | `/api/coupons/validate` | — | Validate coupon code |
-| `GET` | `/api/admin/users` | 🔐 Admin | List all users (syncs Clerk) |
-| `GET` | `/api/admin/orders` | 🔐 Admin | List all orders |
-| `GET` | `/api/admin/products` | 🔐 Admin | List all products |
-| `GET` | `/api/admin/stats` | 🔐 Admin | Analytics & revenue stats |
+| `GET` | `/api/admin/users` |  Admin | List all users (syncs Clerk) |
+| `GET` | `/api/admin/orders` |  Admin | List all orders |
+| `GET` | `/api/admin/products` |  Admin | List all products |
+| `GET` | `/api/admin/stats` |  Admin | Analytics & revenue stats |
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
-**Ishaan Baberwal**
 - GitHub: [@ishaan262004](https://github.com/ishaan262004)
 
 ---
